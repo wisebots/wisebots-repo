@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Wisebots Framework</title>
+<script type="text/javascript">
+
+	function changeStatsTraining(id, game, method){
+
+		var iframeObj = document.getElementById("statstraining");
+		iframeObj.setAttribute('src', '/wisebots-now-admin/now/ajax/statistics/training/' + id + '/' + method + '/' + game);
+	}
+	/*
+	function changeStatsTesting(id, game, method){
+
+		var iframeObj = document.getElementById("statstesting");
+		iframeObj.setAttribute('src', 'http://wisebots.servegame.com/wisebots-now-admin/now/ajax/statistics/testing/' + id + '/' + method + '/' + game);
+	}
+	*/
+	function changeGame(id, game, method, player){ 
+
+		var iframeObj = document.getElementById("game");
+		iframeObj.setAttribute('src', '/wisebots-game-service/gamecloud/' + game + '/' + id + '/' + player);
+
+	}	
+	function changePhaseTest(id, game, method, player, opponent){
+
+		var iframeObj = document.getElementById("test");
+		iframeObj.setAttribute('src', '/wisebots-now-admin/now/ajax/testphase/' + id + '/' + opponent + '/' + player + '/' + method + '/' + game + '/1000/1.0/QVALUE/MINMAX');
+	}	
+	function changeTableTraining(id, game, method){
+
+		var iframeObj = document.getElementById("tabletraining");
+		iframeObj.setAttribute('src', '/wisebots-now-admin/now/ajax/table/training/' + id + '/' + method + '/' + game);
+	}	
+	/*
+	function changeTableTesting(id, game, method){
+
+		var iframeObj = document.getElementById("tabletesting");
+		iframeObj.setAttribute('src', 'http://wisebots.servegame.com/wisebots-now-admin/now/ajax/table/testing/' + id + '/' + method + '/' + game);
+	}	
+	*/
+</script>
+</head>
+<body>
+
+<div style="position: relative; left:50px; top:10px; height: 500px; width: 500px;">
+    <iframe id="controlpanel" frameborder="0" src="/wisebots-now-admin/now" scrolling="no" style="border:none;width:500px;height:700px;"></iframe>
+</div>
+<div style="position: absolute; left:700px; top:100px; height: 50px; width: 200px;">
+   <iframe id="test" frameborder="0" src="/wisebots-now-admin/now/ajax/testphase/0/0/1/QLPESSIMISTIC/TICTACTOE/0/1.0" scrolling="no" style="border:none;width:800px;height:50px;" ></iframe>
+</div>
+<div style="position: absolute; left:700px; top:160px; height: 500px; width: 500px;">
+    <iframe id="game" frameborder="0" src="/wisebots-game-service/gamecloud/game/0/1" scrolling="no" style="border:none;width:500px;height:500px;" ></iframe>
+</div>
+<div style="position: absolute; left:50px; top:700px; height: 600px; width: 650px;"> 
+    <iframe id="statstraining" frameborder="0" src="/wisebots-now-admin/now/ajax/statistics/training/0/QLPESSIMISTIC/TICTACTOE" scrolling="no" style="border:none;width:800px;height:600px;"></iframe>
+</div>
+<!--  
+<DIV STYLE="position: absolute; left:50px; top:550px; height: 600px; width: 650px;"> 
+    <iframe id="statstesting" frameborder="0" src="http://wisebots.servegame.com/wisebots-now-admin/now/ajax/statistics/testing/0/QLPESSIMISTIC/TICTACTOE" scrolling="no" style="border:none;width:800px;height:600px;"></iframe>
+</DIV>
+-->
+<div style="position: absolute; left:700px; top:700px; height: 600px; width: 650x;"> 
+    <iframe id="tabletraining" frameborder="0" src="/wisebots-now-admin/now/ajax/table/training/0/QLPESSIMISTIC/TICTACTOE" scrolling="yes" style="border:none;width:800px;height:2500px;"></iframe>
+</div>
+<!--  
+<DIV STYLE="position: absolute; left:50px; top:1150px; height: 1000px; width: 800px;"> 
+    <iframe id="tabletesting" frameborder="0" src="http://wisebots.servegame.com/wisebots-now-admin/now/ajax/table/testing/0/QLPESSIMISTIC/TICTACTOE" scrolling="yes" style="border:none;width:800px;height:2500px;"></iframe>
+</DIV>
+-->
+
+  <noframes>
+        <div>Sorry. This page requires frames to be enabled</div>
+  </noframes>
+  
+  <!-- 
+<div id="botprofile" style="font-family: monospace;">
+<span><a href="/wisebots-now-admin/now">Create new bot</a></span><br/>
+<span><a href="/wisebots-now-admin/now/list">List bots</a></span><br/>
+<span><a href="/wisebots-now-admin/now/merge">Merge bots</a></span><br/>
+</div>
+ -->
+ 
+</body>
+</html>
