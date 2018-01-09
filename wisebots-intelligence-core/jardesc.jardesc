@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="MacRoman" standalone="no"?>
+<jardesc>
+    <jar path="wisebots-now-admin/WebContent/WEB-INF/lib/wisebots-intelligence-core.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/wisebots-intelligence-core/jardesc.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="/wisebots-intelligence-core/MANIFEST-MF" manifestVersion="1.0" reuseManifest="false" saveManifest="true" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/wisebots-intelligence-core/.project"/>
+        <file path="/wisebots-intelligence-core/.classpath"/>
+        <javaElement handleIdentifier="=wisebots-intelligence-core/src"/>
+    </selectedElements>
+</jardesc>
